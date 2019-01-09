@@ -1,0 +1,54 @@
+﻿<Window xmlns:Controls="clr-namespace:ha4win.Controls"  x:Class="ha4win.View.Config"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ha4win.View"
+        xmlns:c="clr-namespace:ha4win.Controls"
+        mc:Ignorable="d"
+        Title="Config" Height="800" Width="600">
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="c:DoubleTextBox">
+                <Setter Property="Height" Value="30"></Setter>
+                <Setter Property="FontSize" Value="20"></Setter>
+            </Style>
+            <Style TargetType="TextBlock">
+                <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+                <Setter Property="Height" Value="30"></Setter>
+                <Setter Property="FontSize" Value="20"></Setter>
+            </Style>
+        </Grid.Resources>
+
+        <StackPanel>
+
+            <Grid Height="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="123*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock>服务类型:</TextBlock>
+                <ComboBox Grid.Column="1"></ComboBox>
+            </Grid>
+
+            <Grid Height="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="123*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock>虚拟网卡:</TextBlock>
+                <ComboBox Grid.Column="1"></ComboBox>
+            </Grid>
+
+
+            <c:DoubleTextBox V1="检测    IP:"  V2="dsfasdf" />
+            <c:DoubleTextBox V1="虚拟网卡:"  V2="dsfasdf" />
+            <c:DoubleTextBox V1="运行脚本:"  V2="dsfasdf" />
+            <c:DoubleTextBox V1="虚拟    IP:"  V2="dsfasdf" />
+            <c:DoubleTextBox V1="虚拟网关:"  V2="dsfasdf" />
+            <c:DoubleTextBox V1="虚拟掩码:"  V2="dsfasdf" />
+            <c:DoubleTextBox V1="服务类型:"  V2="dsfasdf" />
+        </StackPanel>
+
+    </Grid>
+</Window>

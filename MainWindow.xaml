@@ -1,0 +1,33 @@
+﻿<Window x:Class="ha4win.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ha4win"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="280*"/>
+            <RowDefinition Height="69*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Click="button_Click" Name="Open"  Content="Folder"></Button>
+            <Button Grid.Column="1" Click="button_Click" Name="Start" Content="Start"></Button>
+            <Button Grid.Column="2" Click="button_Click" Name="Stop"  Content="Stop" IsEnabled="False"></Button>
+            <Button Grid.Column="3" Click="button_Click" Name="Test"  Content="Test" IsEnabled="False"></Button>
+            <Button Grid.Column="4" Click="button_Click" Name="Exit"  Content="Exit"></Button>
+        </Grid>
+    </Grid>
+</Window>
